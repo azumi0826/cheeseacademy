@@ -1,0 +1,483 @@
+/* ここから下に記載していく */
+html{
+    width: 1200px;
+    margin: 0 auto;
+    /* 上下0 左右は真ん中寄せ */
+}
+
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+
+h2{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-size: 18px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+p{
+    font-size: 16px;
+    line-height: 180%;
+    /* 行間を整える 文字基準サイズに対する％の値*/
+}
+
+/* ここからヘッダー */
+
+.header{
+    display: flex;
+
+}
+
+.header a{
+    text-decoration-line: none;
+    /* リンクの下線を消した */
+        color: black;
+}
+
+.header img{
+    width: 1200px;
+    object-fit: contain;
+    /* 	コンテンツはアスペクト比が固定されたまま、要素のサイズに収まるように表示 */
+    padding-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    /* nav ul（親）の中のli(子要素）を横並び */
+    margin: 50px 100px 50px 150px;
+    /* ulをブロックにとらえて */
+
+
+}
+nav ul li {
+    padding-right: 50px;
+    /* liの要素間の間隔 */
+    font-size: 21px;
+    text-decoration-line: none;
+
+}
+/* ここまでヘッダー */
+
+/* ここからメインビジュアル */
+
+
+.mainvisual {
+    width: 1200px;
+    position: relative;
+    /* 親要素にrelativeで基点を設定 */
+}
+
+.mainvisual img{
+    width: 1200px;
+
+}
+
+.sekai{
+    position: absolute;
+    /* 子要素を親ようそ基点に動かす */
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* センター寄せ */
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    white-space: nowrap;
+    /* 改行なし */
+}   
+
+.tokyo{
+    position: absolute;
+    /* 子要素を親ようそ基点に動かす */
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* センター寄せ */
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+    white-space: nowrap;
+}   
+
+/* メインビジュアルはここまで */
+
+/* ABOUTはここから */
+
+.about h2{
+    color: #ffd61a;
+
+}
+
+.about h3{
+
+    font-size: 18px;
+}
+
+.about p{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom:40px;
+    line-height: 180%;
+
+}
+
+.about  img{
+    width: 25%;
+    /* ４枚が並ぶように２５％ずつ */
+
+}
+
+/* ここからCOURSE全体 */
+
+.course p{
+    text-align: center;
+    padding-bottom: 60px;
+}
+/* COURSE全体の設定終わり */
+
+
+/* ここからCOURSE01 */
+.course01{
+    background-color: #fafafa;
+    display: flex;
+    /* 横並びにする */
+   
+}
+
+.course01 .right{
+    width: 600px;
+    height: 404px;
+    padding:0 0 0 50px;
+}
+
+.course01 .title {
+    text-align: left;
+    margin: 0;
+    padding-top:100px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 430px;
+  }
+  .course01 .text {
+    margin: 40px 0 100px;
+    padding: 0;
+  }
+
+  .course01 .image img{
+    width: 600px;
+    object-fit: contain;
+    /* 縦横比を保ったまま拡大縮小 */
+
+  }
+/* course01 ここまで */
+
+  .course03{
+    background-color: #fafafa;
+    display: flex;
+    /* 横並びにする */
+}
+
+.course03 .right{
+    width: 600px;
+    padding:0 0 0 50px;
+    height: 404px;
+}
+
+.course03 .title {
+    text-align: left;
+    margin: 0;
+    padding-top:100px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 430px;
+  }
+  .course03 .text {
+    margin: 40px 0 100px;
+    padding: 0;
+  }
+
+  .course03 .image img{
+    width: 600px;
+    object-fit: contain;
+
+  }
+  .course02{
+    background-color: #fafafa;
+    display: flex;
+    /* 横並びにする */
+    position: relative;
+    flex-direction: row-reverse; /*左右入れ替え*/
+   
+}
+.course02 .left{
+    width: 600px;
+    position: absolute
+    left:100px;
+    height: 404px;
+}
+
+.course02 .title {
+    margin: 0;
+    padding-top:120px;
+    padding-left: 120px;
+    font-weight: bold;
+    font-size: 18px;
+   
+        /* 文字をブロックの中で右寄せ */
+  }
+
+
+
+  .course02 .text {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    /* 右寄せ */
+    margin-right: 50px;
+    /* 写真との間 */
+
+ 
+  }
+
+  .course02 .image img{
+    width: 600px;
+ 
+    object-fit:contain;
+
+  }
+
+  /* ここからNEWS */
+.news h2{
+    color: #ffd61a;
+}
+
+.news h3{
+    padding-bottom: 60px;
+}
+
+.newswrap{
+    display: flex;
+    /* それぞれのニュースが横並びに */
+    justify-content: center;
+    /* 子要素news123の並びをcenterに */
+}
+
+.news1,.news2,.news3{
+    width: 300px;
+   
+}
+
+.news1 img,.news2 img,.news3 img{
+    padding-bottom: 30px;
+   
+}
+
+.news1,.news2{
+    padding-right: 30px;
+}
+
+.more{
+    width: 250px; /* 横幅指定 */
+    background-color: #ffd61a; /* 背景色 */
+    color: #fff; /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    display: block; /* インライン要素をブロック要素に変更 */
+    margin: 60px auto 60px ; /* 上右左下（時計回り）autoで中央寄せ */
+    font-size: 16px; /* 文字の大きさ */
+    padding: 15px; /* 内側の余白 */
+    border-radius: 100vh; /* 角丸指定 */
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+
+  }
+
+  .more:hover{
+    background: #fff;
+    color: #ffd61a;
+    border:solid #ffd61a;
+    /* solid=実線 */
+  }
+
+/* ここからACCESS */
+.access{
+    background-color: #fafafa;
+
+}
+
+.access p{
+    text-align: center;
+}
+
+.access .map{
+    width: 100%;
+    padding: 60px 0;
+}
+
+.access .table{
+    margin: 0 auto;
+    border-collapse:  separate;     /* セルの線を重ねる */
+    border-spacing: 50px 30px;
+    padding-bottom: 30px;
+}
+
+
+.access .table td {
+    text-align: left;
+    vertical-align: middle;
+    /* tdがtrの枠の中で垂直方向で中央に */
+}
+
+.access .table tr{
+    height: 25px;
+
+
+    /* trの枠の高さ自体を変える */
+
+}
+
+
+/* ここからCONTACT */
+.contact h4{
+    text-align: center;
+    font-size: 16px;
+  padding-bottom: 60px;
+}
+
+.contact p{
+    text-align: center;
+    
+}
+
+
+
+ .contact form{
+    padding-top: 70px;
+ }
+.contact-table{
+    margin: 0 auto;
+    margin-bottom:30px ;
+
+}
+
+.contact-item,
+.contact-body {
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+    /* border 太さ 種類 色 */
+  border-left: none;
+}
+
+.contact-item {
+  text-align: left; /* テキスト左寄せ */
+  width: 240px; /* 横幅 */
+
+}
+
+.contact-body {
+  width: 400px; /* 横幅指定 */
+  border-right: none;
+}
+
+
+
+.form{
+    width:328px ;
+    margin: 0 auto;
+    /* 中央に寄せる autoの設定で余白が均等に */
+  
+}
+
+.form-text {
+    width: 70%;
+  
+    padding: 8px;
+    border-radius: 5px;
+    /* 枠線を丸く */
+    border: 1px solid #bfbfbf;
+    appearance: none;
+    /* ーザーが利用するプラットフォームに応じて、要素がその環境での標準的な見た目になるように指定する際に使う */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   
+  }
+
+.form-select{
+    width: 75%;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+
+.douki{
+    display: block;
+    /* 盾に並べるため */
+}
+
+.douki + .douki {
+    margin-top: 20px;
+  }
+
+ .form-textarea {
+    width: 70%;
+    padding: 10px;
+    height: 177px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+  }
+
+  .contact-submit {
+    width: 250px; /* 横幅指定 */
+    background-color: #ffd61a; /* 背景色 */
+    color: #fff; /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    margin: 30px auto 140px ; /* 上右左下（時計回り）autoで中央寄せ */
+    font-size: 16px; /* 文字の大きさ */
+    padding: 15px; /* 内側の余白 */
+    border-radius: 100vh; /* 角丸指定 */
+    border: none;
+    cursor: pointer;
+    /* カーソルを当てた時の表示カーソル */
+  }
+
+  .contact-submit:hover{
+    /* :hoverの間に空白があったので失敗だった */
+    background-color: #fff; /* 背景色 */
+    color: #ffd61a; /* 文字色 */
+    border:solid #ffd61a;
+  }
+
+  /* ここからフッター */
+.footer{
+    width: 1200px;
+    background-color: #707070;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.hover {
+    background-color: white;
+    font-size: 11px;
+    border-radius: 5px;
+  }
+  
+  .hover:hover {
+    background-color: yellow;
+    font-size: 11px;
+    border-radius: 5px;
+  }
